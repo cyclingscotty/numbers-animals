@@ -1,0 +1,47 @@
+* {
+    font-size: 70px;
+}
+
+h1     {
+   font-size: .5rem; 
+    text-align: center;
+}
+
+h2     {
+    margin: 5px;
+}
+
+#picture img     {
+    width: 35vw;
+    height: 20vw;
+}
+
+#words,
+#picture    {
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+words     {
+    height: auto;
+}
+
+#number,
+#word    {
+    margin: 5px;
+}
+
+#picture    {
+    width: 50vw;
+}
+
+#wordsBox,
+#imageBox{
+    display: flex;
+    justify-content: center;
+}
+
+button     {
+    font-size: 17px;
+}
