@@ -141,15 +141,25 @@ const words = {
         "goat",
         "goats",
         "images/goat.png"
+    ],
+    koala:[
+        "koala",
+        "koalas",
+        "images/koala.png"
+    ],
+    koala:[
+        "panda",
+        "pandas",
+        "images/panda.png"
     ]
 };
 
 function randomNumber(){
     let howMany = Math.floor(Math.random()*10);
   document.getElementById('number').innerHTML = numbers[howMany] + " <button id='numberButton'>Go!</button>";
-    document.getElementById('numberButton').addEventListener('click', function(){
+  document.getElementById('numberButton').addEventListener('click', function(){
     randomWord(howMany);
-        });
+       });
 }
 
 function randomWord(howMany){
