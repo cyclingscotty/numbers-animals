@@ -229,7 +229,7 @@ const words = {
 
 
 function randomNumber(){    
-    
+    document.getElementById('reset').style.backgroundColor = 'none';
     let howMany = Math.floor(Math.random()*10);
   document.getElementById('number').innerHTML = numbers[howMany]; // + " <button id='numberButton'>Go!</button>";
   //document.getElementById('numberButton').addEventListener('click', function(){
@@ -254,7 +254,7 @@ function randomWord(howMany){
         theDOMSpace.innerHTML = words[theObject][1] + " <button id='wordButton'>Go!</button>";
         console.log(theDOMSpace);
     }
-    
+    document.getElementById('wordButton').style.backgroundColor = 'orange';
     document.getElementById('wordButton').addEventListener('click', function(){
     showTheNumber(howMany, theObject, theWord);
     });
@@ -263,6 +263,8 @@ function randomWord(howMany){
 function showImage(word){
     console.log(word);
     document.querySelector('#picture img').src=words[word][2];
+    document.getElementById('reset').style.backgroundColor = 'orange';
+    document.getElementById('numeralButton').style.display = 'none';
     document.getElementById('reset').addEventListener('click', function(){
         location.reload();
     })
@@ -270,6 +272,8 @@ function showImage(word){
 
 function showTheNumber(theNumber, theObject){
     document.getElementById('numeral').innerHTML = (theNumber+1) + " <button id='numeralButton'>Go!</button>";
+    document.getElementById('wordButton').style.display = 'none';
+    document.getElementById('numeralButton').style.backgroundColor = 'orange';
     document.getElementById('numeralButton').addEventListener('click', function(){
      showImage(theObject);
     });
