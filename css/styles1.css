@@ -45,3 +45,7 @@ words     {
 button     {
     font-size: 17px;
 }
+
+#levelButtonSection {
+    font-size: 0.4rem;
+}
