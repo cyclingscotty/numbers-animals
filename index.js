@@ -173,7 +173,8 @@ const words = {
         "penguins",
         "images/penguin.png"
     ],
-    //30
+    
+    /*//30
     
     
     
@@ -222,7 +223,7 @@ const words = {
         "flamingoes",
         "images/flamingo.png"
     ]
-    
+   */ 
 };
 
 

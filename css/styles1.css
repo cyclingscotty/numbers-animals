@@ -30,6 +30,7 @@ words     {
 #number,
 #word    {
     margin: 5px;
+    letter-spacing: 2px;
 }
 
 #picture    {
@@ -48,4 +49,8 @@ button     {
 
 #levelButtonSection {
     font-size: 0.4rem;
+}
+
+div#preload {
+    display: none;
 }
